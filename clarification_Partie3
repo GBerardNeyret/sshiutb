@@ -7,6 +7,11 @@ body:
     id: passage
     attributes:
       label: Passage concerné
+      body: 5. Ajoutez AddKeysToAgent yes dans votre config (section suivante) et expliquez le comportement
+obtenu.
+6. Le piège du ForwardAgent. Connectez-vous au bastion avec ssh -A (ou ForwardAgent yes), puis
+exécutez sur le bastion ssh-add -l. Que voyez-vous ? Formulez précisément le risque, puis expliquez
+pourquoi le ProxyJump (section suivante) ne présente pas ce risque.
       description: Copiez la phrase ou le paragraphe, ou indiquez la section.
     validations:
       required: true
@@ -14,6 +19,8 @@ body:
     id: difficulte
     attributes:
       label: Ce qui bloque
+      body: Ces question sont mal placésn elles demandent à se référer à des parties suivantes et de faire le TP dans le désordre.
+Ceci peut donc rendre l'étudiant confus par rapport au TP.
       description: Qu'avez-vous compris, qu'avez-vous fait, où ça coince ?
     validations:
       required: true
@@ -21,4 +28,6 @@ body:
     id: reformulation
     attributes:
       label: Reformulation proposée
+      body: Je déplacerai la question 5 de la partie 3 avant la question 2 de la partie 4.
+J'enléverai aussi les mentions indiquant de se référer à la section suivante.
       description: Comment vous l'auriez écrit pour un camarade.
